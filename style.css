@@ -180,7 +180,8 @@ td {
   scrollbar-width: none;
 }
 
-code, pre {
+code,
+pre {
   background-color: #f4f4f4;
   padding: 2px 4px;
   border-radius: 4px;
@@ -266,4 +267,33 @@ code, pre {
 
 .journey-btn:hover {
   background-color: #16a085;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+.flexbox {
+  display: flex;
+}
+.left-col,
+.right-col {
+  width: 45%;
+  padding: 1rem;
+  border-radius: 1.2rem;
+}
+.left-col {
+  background-color: #a577ac;
+  & p {
+    color: #f9f2e9;
+  }
+}
+.right-col {
+  background-color: #a15e57;
+}
+.left-col.flex,
+.right-col.flex {
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
