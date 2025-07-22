@@ -8,7 +8,11 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="shortcut icon" href="../../images/khurram.jpg" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="../../images/khurram.jpg"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="../../style.css" />
   </head>
   <body>
@@ -27,7 +31,7 @@
                   <a href="dayOne.html">Day One</a>
                 </li>
                 <li>
-                  <a href="dayTwo.html">DayTwo</a>
+                  <a href="dayTwo.html" class="active">DayTwo</a>
                 </li>
               </ol>
             </li>
@@ -62,7 +66,14 @@
                     Learn: &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;,
                     &lt;section&gt;, &lt;footer&gt;
                   </td>
-                  <td>Traversy Media HTML Crash Course</td>
+                  <td>
+                    <a
+                      href="https://www.youtube.com/watch?v=UB1O30fR-EE"
+                      target="_blank"
+                    >
+                      Traversy Media HTML Crash Course
+                    </a>
+                  </td>
                 </tr>
                 <tr>
                   <td>
@@ -77,12 +88,10 @@
         </section>
 
         <section>
-          <br />
           <h2>Practice</h2>
         </section>
-        <section>
-          <br />
-          <h3><u>Unordered List of Goals</u></h3>
+        <section aria-labelledby="goals-list">
+          <h3 id="goals-list"><u>Unordered List of Goals</u></h3>
           <ul class="table-list res">
             <li>HTML5 – Structure of web pages</li>
             <li>CSS3 – Styling, Flexbox, Grid</li>
