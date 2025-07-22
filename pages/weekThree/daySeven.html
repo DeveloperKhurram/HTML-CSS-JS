@@ -3,17 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Week Two - Day Seven</title>
+    <title>Week 3 - Day Seven</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="shortcut icon"
-      href="../../images/khurram.jpg"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="../../images/khurram.jpg" type="image/x-icon" />
     <link rel="stylesheet" href="../../style.css" />
+    <style>
+      .responsive-box {
+        width: 100%;
+        max-width: 600px;
+        height: 200px;
+        background: #4cafef;
+        margin: 2rem auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-size: 1.5rem;
+        transition: all 0.3s ease;
+      }
+
+      @media (max-width: 768px) {
+        .responsive-box {
+          background: #f76c6c;
+          font-size: 1.2rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .responsive-box {
+          background: #8bc34a;
+          font-size: 1rem;
+        }
+      }
+    </style>
   </head>
   <body>
     <div class="container">
@@ -23,15 +48,13 @@
           <ul>
             <li><a href="../../index.html">Home</a></li>
             <li class="list-parent">
-              <a href="WeekTwo.html">Week Two</a>
+              <a href="WeekThree.html">Week Three</a>
               <ol class="child-list">
                 <li><a href="dayOne.html">Day One</a></li>
                 <li><a href="dayTwo.html">Day Two</a></li>
                 <li><a href="dayThree.html">Day Three</a></li>
                 <li><a href="dayFour.html">Day Four</a></li>
-                <li><a href="dayFive.html">Day Five</a></li>
-                <li><a href="daySix.html">Day Six</a></li>
-                <li><a href="daySeven.html">Day Seven</a></li>
+                <li><a href="dayFive.html" class="active">Day Five</a></li>
               </ol>
             </li>
           </ul>
@@ -42,16 +65,15 @@
       <main>
         <section class="flex">
           <div>
-            <h1>Week Two - Day Seven</h1>
-            <h2>CSS Background Images & Patterns</h2>
+            <h1>Day Seven</h1>
+            <h2>Media Queries & Responsive Design</h2>
           </div>
         </section>
 
         <section class="inspiration">
-          <h2>"Backgrounds set the tone for your entire design."</h2>
+          <h2>"Design for all screen sizes seamlessly."</h2>
         </section>
 
-        <!-- Topics Table -->
         <section>
           <div class="flex-center overflow">
             <table>
@@ -63,27 +85,17 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>CSS Background Properties</td>
+                  <td>Learn: `@media` queries and breakpoints.</td>
                   <td>
                     <a
-                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/background"
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries"
                       target="_blank"
-                      >CSS Background – MDN</a
+                      >MDN - Media Queries</a
                     >
                   </td>
                 </tr>
                 <tr>
-                  <td>Background Patterns & Images</td>
-                  <td>
-                    <a
-                      href="https://cssgradient.io/blog/css-background-patterns/"
-                      target="_blank"
-                      >CSS Patterns</a
-                    >
-                  </td>
-                </tr>
-                <tr>
-                  <td>Using multiple backgrounds</td>
+                  <td>Practice changing colors and font sizes for different screen widths.</td>
                   <td>-</td>
                 </tr>
               </tbody>
@@ -91,20 +103,12 @@
           </div>
         </section>
 
-        <!-- Practice Section -->
         <section>
-          <h2>Practice</h2>
-          <p>Examples of background images and CSS patterns:</p>
+          <h2>Practice Example</h2>
+          <div class="responsive-box">Resize the window</div>
         </section>
 
-        <section class="background-demo">
-          <div class="bg-box bg-image">Background Image</div>
-          <div class="bg-box bg-pattern">Pattern with Gradient</div>
-        </section>
-
-        <a href="../weekThree/weekThree.html" class="journey-btn">
-          Go To - Week Three
-        </a>
+        <a href="daySix.html" class="journey-btn">Go To - Day Six</a>
       </main>
 
       <!--? Footer -->

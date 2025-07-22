@@ -3,17 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Week Two - Day Seven</title>
+    <title>Week 6 - Day Six</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="shortcut icon"
-      href="../../images/khurram.jpg"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="../../images/khurram.jpg" type="image/x-icon" />
     <link rel="stylesheet" href="../../style.css" />
+    <style>
+      .pseudo-demo {
+        width: 200px;
+        padding: 1rem;
+        margin: 2rem auto;
+        text-align: center;
+        background: #ffe4b5;
+        border: 2px solid #ff9800;
+        position: relative;
+        cursor: pointer;
+      }
+
+      .pseudo-demo:hover {
+        background: #ffc107;
+      }
+
+      .pseudo-demo::before {
+        content: "→ ";
+        color: #ff5722;
+      }
+
+      .pseudo-demo::after {
+        content: " ←";
+        color: #ff5722;
+      }
+    </style>
   </head>
   <body>
     <div class="container">
@@ -23,15 +45,11 @@
           <ul>
             <li><a href="../../index.html">Home</a></li>
             <li class="list-parent">
-              <a href="WeekTwo.html">Week Two</a>
+              <a href="WeekThree.html">Week Three</a>
               <ol class="child-list">
                 <li><a href="dayOne.html">Day One</a></li>
                 <li><a href="dayTwo.html">Day Two</a></li>
-                <li><a href="dayThree.html">Day Three</a></li>
-                <li><a href="dayFour.html">Day Four</a></li>
-                <li><a href="dayFive.html">Day Five</a></li>
-                <li><a href="daySix.html">Day Six</a></li>
-                <li><a href="daySeven.html">Day Seven</a></li>
+                <li><a href="dayThree.html" class="active">Day Three</a></li>
               </ol>
             </li>
           </ul>
@@ -42,16 +60,15 @@
       <main>
         <section class="flex">
           <div>
-            <h1>Week Two - Day Seven</h1>
-            <h2>CSS Background Images & Patterns</h2>
+            <h1>Day Three</h1>
+            <h2>Pseudo-classes & Pseudo-elements</h2>
           </div>
         </section>
 
         <section class="inspiration">
-          <h2>"Backgrounds set the tone for your entire design."</h2>
+          <h2>"Enhance elements without extra markup."</h2>
         </section>
 
-        <!-- Topics Table -->
         <section>
           <div class="flex-center overflow">
             <table>
@@ -63,27 +80,19 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>CSS Background Properties</td>
+                  <td>
+                    Learn: `:hover`, `:focus`, `:nth-child`, `::before`, `::after`.
+                  </td>
                   <td>
                     <a
-                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/background"
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes"
                       target="_blank"
-                      >CSS Background – MDN</a
+                      >MDN - Pseudo-classes</a
                     >
                   </td>
                 </tr>
                 <tr>
-                  <td>Background Patterns & Images</td>
-                  <td>
-                    <a
-                      href="https://cssgradient.io/blog/css-background-patterns/"
-                      target="_blank"
-                      >CSS Patterns</a
-                    >
-                  </td>
-                </tr>
-                <tr>
-                  <td>Using multiple backgrounds</td>
+                  <td>Practice hover effects and custom content with `::before`/`::after`.</td>
                   <td>-</td>
                 </tr>
               </tbody>
@@ -91,20 +100,12 @@
           </div>
         </section>
 
-        <!-- Practice Section -->
         <section>
-          <h2>Practice</h2>
-          <p>Examples of background images and CSS patterns:</p>
+          <h2>Practice Example</h2>
+          <div class="pseudo-demo">Hover Over Me</div>
         </section>
 
-        <section class="background-demo">
-          <div class="bg-box bg-image">Background Image</div>
-          <div class="bg-box bg-pattern">Pattern with Gradient</div>
-        </section>
-
-        <a href="../weekThree/weekThree.html" class="journey-btn">
-          Go To - Week Three
-        </a>
+        <a href="daySeven.html" class="journey-btn">Go To - Day Seven</a>
       </main>
 
       <!--? Footer -->

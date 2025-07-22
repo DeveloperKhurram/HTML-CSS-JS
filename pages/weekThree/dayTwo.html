@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 3 - Day Two</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="../../images/khurram.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="../../style.css" />
+    <style>
+      /* Demo Animation */
+      .animation-box {
+        width: 120px;
+        height: 120px;
+        background-color: #ff6f61;
+        border-radius: 10px;
+        margin: 2rem auto;
+        animation: bounce 2s infinite;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-weight: bold;
+      }
+
+      @keyframes bounce {
+        0%, 100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-20px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!--? Header -->
+      <header>
+        <nav>
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li class="list-parent">
+              <a href="WeekThree.html">Week Three</a>
+              <ol class="child-list">
+                <li><a href="dayOne.html">Day One</a></li>
+                <li><a href="dayTwo.html" class="active">Day Two</a></li>
+              </ol>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!--? Main -->
+      <main>
+        <section class="flex">
+          <div>
+            <h1>Day Two</h1>
+            <h2>CSS Animations & Keyframes</h2>
+          </div>
+        </section>
+
+        <section class="inspiration">
+          <h2>"Good animations guide users; bad ones just distract."</h2>
+        </section>
+
+        <section>
+          <div class="flex-center overflow">
+            <table>
+              <thead>
+                <tr>
+                  <th>Topics</th>
+                  <th>Resources</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    Learn: `@keyframes`, `animation` property (duration, timing-function, delay, iteration-count).
+                  </td>
+                  <td>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes"
+                      target="_blank"
+                    >
+                      CSS Keyframes – MDN
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Practice: Create a bouncing box animation using keyframes.
+                  </td>
+                  <td>-</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section>
+          <h2>Practice Example</h2>
+          <div class="animation-box">Bounce</div>
+        </section>
+
+        <a href="dayThree.html" class="journey-btn">Go To - Day Three</a>
+      </main>
+      <!--? Footer -->
+      <footer>
+        <p>A Roadmap with ❤︎ - © Developer Khurram</p>
+      </footer>
+    </div>
+  </body>
+</html>

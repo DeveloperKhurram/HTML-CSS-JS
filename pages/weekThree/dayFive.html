@@ -3,17 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Week Two - Day Seven</title>
+    <title>Week 3 - Day Five</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="shortcut icon"
-      href="../../images/khurram.jpg"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="../../images/khurram.jpg" type="image/x-icon" />
     <link rel="stylesheet" href="../../style.css" />
+    <style>
+      .transition-box {
+        width: 150px;
+        height: 150px;
+        margin: 2rem auto;
+        background: #f76c6c;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-weight: bold;
+        transition: background-color 0.4s ease, transform 0.4s ease;
+      }
+
+      .transition-box:hover {
+        background-color: #4cafef;
+        transform: scale(1.1) rotate(10deg);
+      }
+    </style>
   </head>
   <body>
     <div class="container">
@@ -23,35 +38,31 @@
           <ul>
             <li><a href="../../index.html">Home</a></li>
             <li class="list-parent">
-              <a href="WeekTwo.html">Week Two</a>
+              <a href="WeekThree.html">Week Three</a>
               <ol class="child-list">
                 <li><a href="dayOne.html">Day One</a></li>
                 <li><a href="dayTwo.html">Day Two</a></li>
                 <li><a href="dayThree.html">Day Three</a></li>
                 <li><a href="dayFour.html">Day Four</a></li>
-                <li><a href="dayFive.html">Day Five</a></li>
-                <li><a href="daySix.html">Day Six</a></li>
-                <li><a href="daySeven.html">Day Seven</a></li>
+                <li><a href="dayFive.html" class="active">Day Five</a></li>
               </ol>
             </li>
           </ul>
         </nav>
       </header>
-
       <!--? Main -->
       <main>
         <section class="flex">
           <div>
-            <h1>Week Two - Day Seven</h1>
-            <h2>CSS Background Images & Patterns</h2>
+            <h1>Day Five</h1>
+            <h2>CSS Transitions & Hover Effects</h2>
           </div>
         </section>
 
         <section class="inspiration">
-          <h2>"Backgrounds set the tone for your entire design."</h2>
+          <h2>"Smooth transitions make the web alive."</h2>
         </section>
 
-        <!-- Topics Table -->
         <section>
           <div class="flex-center overflow">
             <table>
@@ -63,27 +74,20 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>CSS Background Properties</td>
+                  <td>Learn: `transition` property for smooth effects.</td>
                   <td>
                     <a
-                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/background"
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_transitions/Using_CSS_transitions"
                       target="_blank"
-                      >CSS Background – MDN</a
+                      >CSS Transitions – MDN</a
                     >
                   </td>
                 </tr>
                 <tr>
-                  <td>Background Patterns & Images</td>
                   <td>
-                    <a
-                      href="https://cssgradient.io/blog/css-background-patterns/"
-                      target="_blank"
-                      >CSS Patterns</a
-                    >
+                    Practice: Change background and scale on hover with
+                    transition.
                   </td>
-                </tr>
-                <tr>
-                  <td>Using multiple backgrounds</td>
                   <td>-</td>
                 </tr>
               </tbody>
@@ -91,22 +95,13 @@
           </div>
         </section>
 
-        <!-- Practice Section -->
         <section>
-          <h2>Practice</h2>
-          <p>Examples of background images and CSS patterns:</p>
+          <h2>Practice Example</h2>
+          <div class="transition-box">Hover Me</div>
         </section>
 
-        <section class="background-demo">
-          <div class="bg-box bg-image">Background Image</div>
-          <div class="bg-box bg-pattern">Pattern with Gradient</div>
-        </section>
-
-        <a href="../weekThree/weekThree.html" class="journey-btn">
-          Go To - Week Three
-        </a>
+        <a href="daySix.html" class="journey-btn">Go To - Day Six</a>
       </main>
-
       <!--? Footer -->
       <footer>
         <p>A Roadmap with ❤︎ - © Developer Khurram</p>

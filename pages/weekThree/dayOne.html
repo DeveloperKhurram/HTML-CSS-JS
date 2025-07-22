@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 3 - Day One</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="../../images/khurram.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="../../style.css" />
+    <style>
+      /* Demo Styles */
+      .transition-demo {
+        width: 150px;
+        height: 150px;
+        background-color: #4caf50;
+        transition: all 0.4s ease-in-out;
+        margin: 2rem auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-weight: bold;
+        border-radius: 8px;
+      }
+
+      .transition-demo:hover {
+        transform: rotate(20deg) scale(1.2);
+        background-color: #2e7d32;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!--? Header -->
+      <header>
+        <nav>
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li class="list-parent">
+              <a href="WeekThree.html">Week Three</a>
+              <ol class="child-list">
+                <li><a href="dayOne.html" class="active">Day One</a></li>
+                <li><a href="dayTwo.html">Day Two</a></li>
+              </ol>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!--? Main -->
+      <main>
+        <section class="flex">
+          <div>
+            <h1>Day One</h1>
+            <h2>CSS Transitions & Transformations</h2>
+          </div>
+        </section>
+
+        <section class="inspiration">
+          <h2>"Animations bring life to your UI – keep it smooth and elegant."</h2>
+        </section>
+
+        <section>
+          <div class="flex-center overflow">
+            <table>
+              <thead>
+                <tr>
+                  <th>Topics</th>
+                  <th>Resources</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Learn: CSS `transition` property & `transform` functions (scale, rotate, translate).</td>
+                  <td>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_transitions" target="_blank">
+                      CSS Transitions – MDN
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Practice: Create a hover effect that scales and rotates an element.</td>
+                  <td>-</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section>
+          <h2>Practice Example</h2>
+          <div class="transition-demo">Hover Me</div>
+        </section>
+
+        <a href="dayTwo.html" class="journey-btn">Go To - Day Two</a>
+      </main>
+      <!--? Footer -->
+      <footer>
+        <p>A Roadmap with ❤︎ - © Developer Khurram</p>
+      </footer>
+    </div>
+  </body>
+</html>
